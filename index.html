@@ -1,0 +1,21 @@
+<head>
+
+</head>
+<body>
+    <h1>Haoc Toten</h1>
+    <form action="">
+        <div>
+            <label for="">Selecione uma imagem</label>
+            <br>
+            <input type="file" accept="image/*">
+            <br>
+            <button type="submit" >Mostrar dimensões</button>
+        </div>
+    </form>
+    <script>
+        document.querySelector('form').addEventListener('submit',(event)=>{
+            event.preventDefault();
+            const file = document.querySelector('input').files[0];
+        });
+    </script>
+</body>
